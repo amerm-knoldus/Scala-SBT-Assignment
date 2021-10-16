@@ -44,8 +44,8 @@ class CalculatorTest extends AnyWordSpec  with Matchers {
       c add(num1, num2) shouldEqual expectedRes
     }
     "add a negative and positive number correctly" in {
-      val num1 = 4
-      val num2 = -5
+      val num1 = -5
+      val num2 = 4
       val expectedRes = -1
 
       c add(num1, num2) shouldEqual expectedRes
@@ -69,9 +69,9 @@ class CalculatorTest extends AnyWordSpec  with Matchers {
       c subtract(num1, num2) shouldEqual expectedRes
     }
     "subtract a negative and positive number correctly" in {
-      val num1 = 4
-      val num2 = -5
-      val expectedRes = 9
+      val num1 = -5
+      val num2 = 4
+      val expectedRes = -9
 
       c subtract(num1, num2) shouldEqual expectedRes
     }
